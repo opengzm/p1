@@ -52,7 +52,7 @@ void doCal()
         p->next->next = p->next->next->next;
         p = p->next->next;
     }
-    printf("\n %d.",p->data);
+    printf("\n   %d.",p->data);
 }
 
 int main()

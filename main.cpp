@@ -54,12 +54,24 @@ void doCal()
     }
     printf("\n   %d.",p->data);
 }
-
+#include <map>
+#include <vector>
 int main()
 {
     INTPTRS iptr =  std::make_shared<int>(42);
     printf("hello world11! %d. \n",*iptr);
 
+    map<int,int> tmp;
+    for(int i = 0;i < 10;i++)
+    {
+        //tmp[i] = i;
+        tmp.insert(std::pair<int,int>(i,i));
+    }
+  
+    for(auto item : tmp)  
+    {  
+        printf("%d.  ",item.second);
+    } 
     
     doCal();
     return 1;

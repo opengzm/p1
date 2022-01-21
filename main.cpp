@@ -73,6 +73,9 @@ int main()
         printf("%d.  ",item.second);
     } 
     
+
+
+    
     doCal();
     return 1;
 }
